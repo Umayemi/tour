@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +8,140 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1{
+  text-align: center;
+  margin: auto;
+}
+.tour{
+  display: flex;
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.underlined{
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  height: 4px;
+  background-color: seagreen;
+}
+.container{
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.container:hover{
+  box-shadow: 0.5px 0.5px 7px rgb(220, 220, 220);
+}
+.content{
+  margin-left: 50px;
+
+}
+.title{
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.price{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: seagreen;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+.blog-text{
+  padding: 10px 20px;
+  text-align: center;
+}
+.blog-body{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.article{
+  opacity: 0.6;
+  text-align: left;
+}
+.delete{
+  width: 100%;
+  padding: 7px 0px;
+  font-size: 12px;
+  color: seagreen;
+  background-color: white;
+  border: 1.5px solid seagreen;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+.delete:hover{
+  background-color: seagreen;
+  color: white;
+}
+.show{
+  background-color: transparent;
+  border: none;
+  color: seagreen;
+  margin-left: 2px;
+  padding: 0;
+  font-size: 13px;
+}
+.empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.empty-btn{
+  width: 100px;
+  margin-top: 30px;
+  background-color: seagreen;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+
+}
+button{
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0.5px 0.5px 7px rgb(231, 231, 231);
+}
+.empty-text{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+@media (max-width:960px) {
+  .container{
+    width: 95%;
+    height: 100%;
+    margin-left: 0px;
+  }
+  .content{
+    margin-left: 5%;
+  }
 }
